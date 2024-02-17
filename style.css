@@ -1,2 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+    --ff-secondary: "Open Sans", sans-serif;
+    --ff-primary: "Roboto", sans-serif;
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --spacing: 0.1rem;
+    --fixed-width: 620px;
+    --clr-white: #fff;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s linear;
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+body {
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
