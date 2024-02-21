@@ -148,6 +148,12 @@ color: var(--clr-white);
   transition: var(--transition);
   cursor: pointer;
 }
+.fa-chevron-left,
+.fa-chevron-right {
+
+  font-weight: bold;
+  text-shadow: 1px 1px #ddd;
+}
 .prev-btn:hover,
 .next-btn:hover {
   color: var(--clr-primary-5);
