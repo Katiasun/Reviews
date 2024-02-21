@@ -117,7 +117,6 @@ p {
 transform: translateY(25%);
 background: var(--clr-primary-5);
 color: var(--clr-white);
-
 }
 #person-img {
   width: 100%;
@@ -126,6 +125,18 @@ color: var(--clr-white);
   object-fit: cover;
   border-radius: 50%;
   position: relative;
+}
+#author {
+  margin-bottom: 0.25rem;
+}
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  font-size: 0.85rem;
+}
+#info {
+  margin-bottom: 0.75rem;
 }
 
 @media screen and (min-width: 800px) {
