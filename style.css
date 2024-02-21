@@ -35,6 +35,15 @@ body {
     line-height: 1.5;
     font-size: 0.875rem;
 }
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
 h2, h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
@@ -48,7 +57,28 @@ h2{
 h4{
    font-size: 0.875rem;
 }
+
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+
+@media screen and (min-width: 800px) {
+  body{
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h2, h4 {
+    line-height: 1;
+  }
+}
+/* @media screen and (min-width: 992px) {
+  main {
+
+  }
+} */
