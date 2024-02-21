@@ -140,19 +140,15 @@ color: var(--clr-white);
 }
 .prev-btn,
 .next-btn {
-  color: var(--clr-primary-7);
-  font-size: 1.25rem;
   background: transparent;
   border-color: transparent;
   margin: 0 0.5rem;
   transition: var(--transition);
   cursor: pointer;
 }
-.fa-chevron-left,
-.fa-chevron-right {
-
-  font-weight: bold;
-  text-shadow: 1px 1px #ddd;
+.fas {
+  color: var(--clr-primary-7);
+  font-size: 1.25rem;
 }
 .prev-btn:hover,
 .next-btn:hover {

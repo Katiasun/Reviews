@@ -54,3 +54,14 @@ function showPerson(person) {
     job.textContent = item.job;
     info.textContent = item.text;
 }
+//show next person
+nextBtn.addEventListener("click", function() {
+    currentItem++;
+    showPerson(currentItem);
+})
+
+//show prevent person
+prevBtn.addEventListener("click", function() {
+    currentItem--;
+    showPerson(currentItem);
+})
