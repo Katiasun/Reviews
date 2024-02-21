@@ -73,7 +73,17 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-
+.review {
+  background: var(--clr-white);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+.review:hover {
+  box-shadow: var(--dark-shadow);
+}
 @media screen and (min-width: 800px) {
   body{
     font-size: 1rem;
