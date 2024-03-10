@@ -43,12 +43,12 @@ let currentItem = 0;
 
 //load intial item
 window.addEventListener("DOMContentLoaded", function() {
-    showPerson(currentItem);
+    showPerson();
 });
 
 //show person based om item
-function showPerson(person) {
-    const item = reviews[person];
+function showPerson() {
+    const item = reviews[currentItem];
     img.src = item.img;
     author.textContent = item.name;
     job.textContent = item.job;
@@ -57,11 +57,17 @@ function showPerson(person) {
 //show next person
 nextBtn.addEventListener("click", function() {
     currentItem++;
-    showPerson(currentItem);
+    if(currentItem > reviews.length - 1) {
+      currentItem = 0;
+    }
+    showPerson();
 })
 
 //show prevent person
 prevBtn.addEventListener("click", function() {
     currentItem--;
-    showPerson(currentItem);
+    if(currentItem < 0) {
+      currentItem = reviews.length - 1;
+    }
+    showPerson();
 })
